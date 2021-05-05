@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Search.css";
-import "react-date-range/dist/styles";
-import "react-date-range/dist/theme/default";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 
 //Date picker
@@ -14,12 +14,16 @@ function Search() {
     endDate: endDate,
     key: "selection",
   };
-  function handleSlection(range) {
+  function handleSelection(ranges) {
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
   }
 
-  return <div className="search"></div>;
+  return (
+    <div className="search">
+      <DateRangePicker ranges={[selectionRange]} onChange={handleSelection} />
+    </div>
+  );
 }
 
 export default Search;
