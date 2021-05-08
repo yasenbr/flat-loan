@@ -6,6 +6,9 @@
   border-bottom: 1px solid lightgray;
   cursor: pointer;
 }
+.rdrDateRangePickerWrapper {
+  border-radius: 25px;
+}
 
 .searchResult:hover {
   opacity: 0.8;
