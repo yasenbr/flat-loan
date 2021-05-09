@@ -40,3 +40,9 @@
 .banner__info > h5 {
   margin-top: 18px;
 }
+
+@media screen and (max-width: 767px) {
+  .banner__info {
+    width: none !important;
+  }
+}

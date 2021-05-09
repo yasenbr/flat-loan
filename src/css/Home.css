@@ -1,4 +1,6 @@
-.home__section {
-  display: flex;
-  padding: 30px;
+@media screen and (min-width: 767px) {
+  .home__section {
+    display: flex;
+    padding: 30px;
+  }
 }
